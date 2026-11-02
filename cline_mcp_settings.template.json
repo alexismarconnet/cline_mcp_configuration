@@ -1,0 +1,29 @@
+{
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "__WORKSPACE_PATH__"
+      ],
+      "disabled": false,
+      "autoApprove": [
+        "read_text_file",
+        "list_directory",
+        "directory_tree"
+      ]
+    },
+    "git": {
+      "command": "uvx",
+      "args": [
+        "mcp-server-git"
+      ],
+      "disabled": false,
+      "autoApprove": [
+        "git_status",
+        "git_diff_unstaged"
+      ]
+    }
+  }
+}
